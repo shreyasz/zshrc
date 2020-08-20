@@ -6,7 +6,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/shreyas/.oh-my-zsh"
 
-
+***REMOVED***
 ***REMOVED***
 ***REMOVED***
 
@@ -24,7 +24,7 @@ ZSH_THEME="robbyrussellsz"
 plugins=(
     git
     zsh-autosuggestions
-    history-substring-search
+#    history-substring-search
 )
 
 # Better history seraching with arrow keys
@@ -34,8 +34,8 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
-# bindkey "$terminfo[kcuu1]" history-substring-search-up # Up
-# bindkey "$terminfo[kcuu1]" history-substring-search-down # Up
+# bindkey "^[[A" history-substring-search-up # Up
+# bindkey "^[[B" history-substring-search-down # Up
 
 source $ZSH/oh-my-zsh.sh
 
@@ -58,7 +58,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots) # Include hidden files.
+comp_options+=(globdots) # Include hidden files.
 
 # vi mode
 bindkey -v
