@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussellsz"
 plugins=(
 	git
 	zsh-autosuggestions
-	)
+)
 
 source $ZSH/oh-my-zsh.sh
 
