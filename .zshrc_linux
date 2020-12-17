@@ -13,8 +13,8 @@ export ZSH="/home/shreyas/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussellsz"
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussellsz"
+#ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -77,7 +77,9 @@ ZSH_THEME="agnoster"
 plugins=(
     git
     zsh-autosuggestions
-#    history-substring-search
+    history-substring-search
+    command-not-found
+    sudo
 )
 
 # Better history seraching with arrow keys
@@ -120,7 +122,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # My aliases
-alias ls='ls -laGFh --color=auto'
+alias ls='ls -laGFhvA --color=auto'
 alias gitfs='git fetch; git status'
 alias dev='ssh 212485576@10.227.97.225'
 alias qa='ssh 212485576@10.227.97.111'
