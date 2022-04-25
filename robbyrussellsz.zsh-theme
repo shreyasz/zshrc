@@ -4,7 +4,7 @@ PROMPT+='%(!.%F{196}#.%F{154}%%) '
 
 #RPROMPT='%*'
 RPROMPT="%{$fg_bold[blue]%}[%(!.%{%F{196}%}.%{%F{214}%})$USER%{$fg_bold[blue]%} @ %{%F{226}%}%M "
-RPROMPT+="%{$fg_bold[blue]%}| %F{226}%D{%a %b %d %Y} %{$fg_bold[blue]%}| %F{226}%D{%I:%M:%S%p}%{$fg_bold[blue]%}]"
+RPROMPT+="%{$fg_bold[blue]%}| %F{226}%D{%a %b %d %Y} %{$fg_bold[blue]%}| %F{226}%D{%I:%M:%S %p}%{$fg_bold[blue]%}]"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%} [%{%F{202}%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
