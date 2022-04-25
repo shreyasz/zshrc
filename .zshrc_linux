@@ -128,6 +128,13 @@ alias dev='ssh 212485576@10.227.97.225'
 alias qa='ssh 212485576@10.227.97.111'
 alias tr='tree -pushD -L 3'
 
+# Function to combine mkdir and cd commands
+mkcdir ()
+{
+    mkdir -p -- "$1" &&
+       cd -P -- "$1"
+}
+
 echo "Welcome, Shreyas!"
 
 # History directory:
