@@ -124,9 +124,12 @@ source $ZSH/oh-my-zsh.sh
 # My aliases
 alias ls='ls -laGFh'
 alias gitfs='git fetch; git status'
-alias dev='ssh 212485576@10.227.97.225'
-alias qa='ssh 212485576@10.227.97.111'
-alias tr='tree -pushD -L 3'
+alias gitdt='git difftool'
+alias gitdts='git difftool --staged'
+alias gitlom='git log origin/master'
+alias tre='tree -pushD -L 3'
+alias wttr="curl http://wttr.in"
+alias moon="curl http://wttr.in/Moon"
 
 # Function to combine mkdir and cd commands
 mkcdir ()
@@ -208,6 +211,15 @@ export NVM_DIR="$HOME/.nvm"
 
 # New homebrew installation for Apple Silicon (M1)
 export PATH=/opt/homebrew/bin:$PATH
+
+# Weather report
+curl http://wttr.in
+
+# Moon phase
+curl http://wttr.in/Moon
+
+# Sys info
+neofetch
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
