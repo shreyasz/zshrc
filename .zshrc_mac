@@ -212,14 +212,22 @@ export NVM_DIR="$HOME/.nvm"
 # New homebrew installation for Apple Silicon (M1)
 export PATH=/opt/homebrew/bin:$PATH
 
-# Weather report
-curl http://wttr.in
-
-# Moon phase
-curl http://wttr.in/Moon
-
 # Sys info
 neofetch
+
+# Moon phase
+curl -s http://wttr.in/Moon | head -23
+
+# Weather report
+# curl http://wttr.in
+echo ""
+echo "Current Weather:"
+echo ""
+curl http://wttr.in/Fairfax\?format\=3
+curl http://wttr.in/London\?format\=3
+curl http://wttr.in/Doha\?format\=3
+curl http://wttr.in/Mumbai\?format\=3
+echo ""
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
